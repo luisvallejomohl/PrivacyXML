@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!ELEMENT PXML (age-restriction,data-storage-length,data-mined,data-provided,data-recievers,security)>
+<!ELEMENT age-restriction (age*)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT data-storage-length (#PCDATA)>
+<!ELEMENT data-mined (data-type*)>
+<!ELEMENT data-type (#PCDATA)>
+<!ELEMENT data-provided (data-type*)>
+<!ELEMENT data-recievers (reciever*)>
+<!ELEMENT reciever (#PCDATA)>
+<!ELEMENT security (#PCDATA)>
