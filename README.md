@@ -1,14 +1,13 @@
 # PrivacyXML
 PrivacyXML is a way of writing the privacy policy in XML.
 Syntax:
-```XML
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE PXML PUBLIC "https://privacyXML.tk/PrivacyXML.dtd">
+```xml
+<!DOCTYPE PXML SYSTEM "https://privacyXML.tk/PrivacyXML.dtd">
 <PXML xmlns="https://privacyXML.tk/PrivacyXML.html">
 	<age-restriction>
 		<age><!--Minimum age--><age>
 		<age><!--Maximum age--></age>
-	</age-resctriction>
+	</age-restriction>
 	<data-mined>
 		<data-type><!--Data mined via. Analytics, Metrics etc.--></data-type>
 		<data-type><!--Other data mined--></data-type>
@@ -20,13 +19,12 @@ Syntax:
 		<reciever><!--A reciever who recieves the data you collected--></reciever>
 		<reciever><!--Another reciever who recieves the data you collected--></reciever>
 	</data-recievers>
-	<security><!--insecure if the data can be intercepted by eavesdroppers and secure if it can't--></security>
+	<security><!--Insecure if the data can be intercepted by eavesdroppers, Mixed if so-so and Secure if it can't--></security>
 </PXML>
 ```
 Example PrivacyXML document:
-```XML
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE PXML PUBLIC "https://privacyXML.tk/PrivacyXML.dtd">
+```xml
+<!DOCTYPE PXML SYSTEM "https://privacyXML.tk/PrivacyXML.dtd">
 <PXML xmlns="https://privacyXML.tk/PrivacyXML.html">
 	<age-restriction>
 		<age>10<age>
@@ -43,6 +41,6 @@ Example PrivacyXML document:
 	</data-provided>
 	<data-recievers>
 	</data-recievers>
-	<security>secure</security>
+	<security>Secure</security>
 </PXML>
 ```
